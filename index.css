@@ -1,0 +1,72 @@
+Ensure the page fills the whole screen
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set full background image */
+body {
+    background-image: url("images/veges.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    /* Flexbox to center content */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Center content area */
+.center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Courier New";
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Button styling */
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button-link:hover {
+    background-color: darkgreen;
+}
