@@ -1,4 +1,4 @@
-Ensure the page fills the whole screen
+/* Ensure the page fills the whole screen */
 html, body {
     height: 100%;
     margin: 0;
