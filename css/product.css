@@ -115,6 +115,33 @@ section {
     margin: 0 auto 20px auto;
     text-align: center;
 }
+
+.nutrient-info p {
+    border: dashed black;
+    /* background-color: lightblue; */
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.nutrient-info a {
+    text-decoration: none;
+    /* cursor: pointer;
+    color: blue; */
+}
+
+.nutrient-info a:visited{
+    color: purple;
+}
+
+.nutrient-info a:hover, .nutrient-info a:focus{
+    color: dodgerblue;
+}
+
+.nutrient-info a:active{
+    color: red;
+}
+
 .circle {
     margin: 3rem auto;
     background-color: gold;
