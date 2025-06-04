@@ -47,7 +47,7 @@ nav a {
 /* Heading styling */
 h1 {
   font-size: 40px;
-  border: 2px dashed blue;
+  border: 2px dashed green;
   position: absolute;
   top: 40px;
   left: 50%;
@@ -56,7 +56,7 @@ h1 {
   padding: 20px 40px;
   border-radius: 10px;
   text-align: center;
-  /* background-color: rgba(0, 0, 0, 0.3); */
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Button styling */
