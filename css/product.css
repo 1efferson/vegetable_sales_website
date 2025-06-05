@@ -142,6 +142,79 @@ section {
     color: red;
 }
 
+/* Nutritious Section */
+.nutritious-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #eafbea;
+    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
+}
+
+.nutritious-section h2 {
+    font-size: 1.8rem;
+    color: #2a7a2a;
+    border-left: 6px solid #4CAF50;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.nutritious-section ol li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+/* Storage Section */
+.storage-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fffde7;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.1);
+}
+
+.storage-section h2 {
+    font-size: 1.8rem;
+    color: #b28704;
+    border-left: 6px solid #FFC107;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.storage-section ol li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Choosing Section */
+.choosing-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f0f9ff;
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.1);
+}
+
+.choosing-section h2 {
+    font-size: 1.8rem;
+    color: #1976d2;
+    border-left: 6px solid #2196F3;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.choosing-section ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
 .circle {
     margin: 3rem auto;
     background-color: gold;
