@@ -114,6 +114,7 @@ section {
     max-width: 800px;
     margin: 0 auto 20px auto;
     text-align: center;
+    font-size: 18px;
 }
 
 .nutrient-info p {
@@ -241,7 +242,7 @@ section {
     padding-top: 60px; /* in case header overlaps */
     padding-bottom: 60px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    background-color: #fff;
+    background-color:whitesmoke;
 }
 
 
@@ -264,7 +265,7 @@ section {
 
 .product-card {
     background-color: white;
-    border: 1px solid #ddd;
+    border: 1px solid #000;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     padding: 16px;
