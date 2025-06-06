@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,7 +27,7 @@ header {
     padding: 20px 0;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000 ;
 }
 
 header h1 {
