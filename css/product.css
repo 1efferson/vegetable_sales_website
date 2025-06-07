@@ -88,6 +88,9 @@ section {
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
+    flex-direction: row-reverse;
+    align-content: space-evenly;
+    flex-grow: 1;
 }
 
 .image-grid figure {
