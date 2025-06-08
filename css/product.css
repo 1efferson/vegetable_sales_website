@@ -287,6 +287,7 @@ section {
     /* background-color: #4CAF50; */
     color: black;
     text-align: center;
+    text-decoration: none;
     /* border-radius: 6px; */
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -298,6 +299,7 @@ section {
 
 .left-sidebar {
     left: 0;
+    text-decoration: none;
 }
 /* Footer */
 footer {
