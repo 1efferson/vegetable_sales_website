@@ -18,7 +18,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
 }
 
@@ -268,10 +268,9 @@ section {
 
 /* Right Sidebar */
 .right-sidebar {
-    width: 230px;
-    background-color: #1e1e2f;
+    width: 200px;
+    background-color:white;
     overflow-y: auto;
-    color: white;
     height: 100vh;
     position: fixed;
     right: 0;
@@ -286,7 +285,7 @@ section {
     padding: 10px;
     margin: 10px 0;
     /* background-color: #4CAF50; */
-    color: white;
+    color: black;
     text-align: center;
     /* border-radius: 6px; */
     cursor: pointer;
@@ -297,6 +296,9 @@ section {
     background-color: #388e3c;
 }
 
+.left-sidebar {
+    left: 0;
+}
 /* Footer */
 footer {
     background-color: #333;
