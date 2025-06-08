@@ -54,11 +54,12 @@ nav ul li a:hover {
 }
 
 .sub-header {
-    background: url('../images/sub-header.bg.jpg') no-repeat center center/cover;
-    color: white;
+    background: url('../images/bj3.jpg') no-repeat center center/cover;
+    color:white;
     text-align: center;
     padding: 80px 20px;
     background-color: #4CAF50;
+    background-size:cover;
 }
 
 .sub-header h2 {
