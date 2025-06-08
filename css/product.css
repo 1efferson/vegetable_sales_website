@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -21,13 +22,14 @@ body {
     margin: auto;
 }
 
+/* Header Styles */
 header {
     background-color: #4CAF50;
     color: white;
     padding: 20px 0;
     position: sticky;
     top: 0;
-    z-index: 1000 ;
+    z-index: 1000;
 }
 
 header h1 {
@@ -38,7 +40,7 @@ header h1 {
 nav ul {
     display: flex;
     justify-content: center;
-    list-style-type: none;
+    list-style: none;
     gap: 20px;
 }
 
@@ -53,13 +55,12 @@ nav ul li a:hover {
     color: #d4f3d1;
 }
 
+/* Sub-header */
 .sub-header {
     background: url('../images/bj3.jpg') no-repeat center center/cover;
-    color:white;
+    color: white;
     text-align: center;
     padding: 80px 20px;
-    background-color: #4CAF50;
-    background-size:cover;
 }
 
 .sub-header h2 {
@@ -71,203 +72,30 @@ nav ul li a:hover {
     font-size: 1.2rem;
 }
 
+/* Section Base Styles */
 section {
     padding: 60px 20px;
 }
 
+/* Section Headings */
 .menu-section h2,
 .about-section h2,
-.contact-section h2 {
+.contact-section h2,
+.nutritious-section h2,
+.storage-section h2,
+.choosing-section h2 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2rem;
     color: #4CAF50;
 }
 
+/* Product Grid */
 .image-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
-    flex-direction: row-reverse;
-    align-content: space-evenly;
-    flex-grow: 1;
-}
-
-.image-grid figure {
-    width: 220px;
-    text-align: center;
-}
-
-.image-grid img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.image-grid img:hover {
-    transform: scale(1.05);
-}
-
-.image-grid figcaption {
-    margin-top: 10px;
-    font-weight: 600;
-    color: #444;
-}
-
-.about-section p,
-.contact-section p {
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-    text-align: center;
-    font-size: 18px;
-}
-
-.nutrient-info p {
-    border: dashed black;
-    /* background-color: lightblue; */
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 1em;
-}
-
-.nutrient-info a {
-    text-decoration: none;
-    /* cursor: pointer;
-    color: blue; */
-}
-
-.nutrient-info a:visited{
-    color: purple;
-}
-
-.nutrient-info a:hover, .nutrient-info a:focus{
-    color: dodgerblue;
-}
-
-.nutrient-info a:active{
-    color: red;
-}
-
-/* Nutritious Section */
-.nutritious-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
-    border-radius: 12px;
-    background-color: #eafbea;
-    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
-}
-
-.nutritious-section h2 {
-    font-size: 1.8rem;
-    color: #2a7a2a;
-    border-left: 6px solid #4CAF50;
-    padding-left: 12px;
-    margin-bottom: 16px;
-}
-
-.nutritious-section ol li {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #000;
-    margin-bottom: 8px;
-}
-
-/* Storage Section */
-.storage-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
-    border-radius: 12px;
-    background-color: #fffde7;
-    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.1);
-}
-
-.storage-section h2 {
-    font-size: 1.8rem;
-    color: #b28704;
-    border-left: 6px solid #FFC107;
-    padding-left: 12px;
-    margin-bottom: 16px;
-}
-
-.storage-section ol li {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 8px;
-}
-
-/* Choosing Section */
-.choosing-section {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
-    border-radius: 12px;
-    background-color: #f0f9ff;
-    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.1);
-}
-
-.choosing-section h2 {
-    font-size: 1.8rem;
-    color: #1976d2;
-    border-left: 6px solid #2196F3;
-    padding-left: 12px;
-    margin-bottom: 16px;
-}
-
-.choosing-section ul li {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 8px;
-}
-
-.circle {
-    margin: 3rem auto;
-    background-color: gold;
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    border-radius: 50px;
-    outline: solid red;
-    outline-offset: 0.25rem;
-}
-.nutritious-section,
-.storage-section,
-.choosing-section {
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-
-.fullpage {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 60px; /* in case header overlaps */
-    padding-bottom: 60px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    background-color:whitesmoke;
-}
-
-
-.add-to-cart {
-    /* margin-top: 10px; */
-    padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.add-to-cart:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
 }
 
 .product-card {
@@ -280,6 +108,7 @@ section {
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease;
+    width: 220px;
 }
 
 .product-card:hover {
@@ -300,6 +129,175 @@ section {
     text-align: center;
 }
 
+.add-to-cart {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Nutrient Info */
+.nutrient-info p {
+    border: dashed black;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.nutrient-info a {
+    text-decoration: none;
+}
+
+.nutrient-info a:visited {
+    color: purple;
+}
+
+.nutrient-info a:hover,
+.nutrient-info a:focus {
+    color: dodgerblue;
+}
+
+.nutrient-info a:active {
+    color: red;
+}
+
+/* Nutritious Section */
+.nutritious-section {
+    background-color: #eafbea;
+    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.nutritious-section h2 {
+    color: #2a7a2a;
+    border-left: 6px solid #4CAF50;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.nutritious-section ol li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Storage Section */
+.storage-section {
+    background-color: #fffde7;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.storage-section h2 {
+    color: #b28704;
+    border-left: 6px solid #FFC107;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.storage-section ol li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Choosing Section */
+.choosing-section {
+    background-color: #f0f9ff;
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.choosing-section h2 {
+    color: #1976d2;
+    border-left: 6px solid #2196F3;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.choosing-section ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* About & Contact */
+.about-section p,
+.contact-section p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Full Page Utility */
+.fullpage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Circle */
+.circle {
+    margin: 3rem auto;
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50px;
+    outline: solid red;
+    outline-offset: 0.25rem;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+    width: 230px;
+    background-color: #1e1e2f;
+    overflow-y: auto;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+}
+
+.right-sidebar .nav-item {
+    padding: 10px;
+    margin: 10px 0;
+    /* background-color: #4CAF50; */
+    color: white;
+    text-align: center;
+    /* border-radius: 6px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.right-sidebar .nav-item:hover {
+    background-color: #388e3c;
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -307,4 +305,3 @@ footer {
     padding: 20px 0;
     font-size: 0.9rem;
 }
-
