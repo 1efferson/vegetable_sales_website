@@ -58,9 +58,13 @@ nav ul li a:hover {
 /* Sub-header */
 .sub-header {
     background: url('../images/bj3.jpg') no-repeat center center/cover;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 80px 20px;
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
+    font-family:Chalkduster,fantasy, Impact;
+    
 }
 
 .sub-header h2 {
@@ -309,4 +313,46 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 0.9rem;
+}
+
+
+/* @media mediatype  and (condition: breakpoint) {
+     //CSS rules
+} */
+
+
+/* SMALL */
+@media screen and ( min-width: 576px) {
+    body {
+        background-color: black;
+    }
+}
+
+/* MEDIUM */
+@media screen and ( min-width: 768px) {
+    body {
+        background-color: red;
+    }
+}
+/* LARGE */
+@media screen and ( min-width: 992px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* XL */
+@media screen and ( min-width: 1200px) {
+    body {
+        background-color: rebeccapurple;
+    }
+}
+
+/* MOBILE DEVICE LANDSCAPE */
+
+@media screen and ( max-height: 425px) and (min-aspect-ratio: 7/4) {
+
+    body {
+        background-color: gold;
+    }
 }
