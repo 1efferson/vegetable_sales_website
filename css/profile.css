@@ -1,0 +1,159 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img { 
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* UTILITY CLASSES */
+.nowrap {
+    white-space: nowrap;
+}
+
+/* GENERAL STYLING */
+body {
+    font: 1.5rem "Nunito", sans-serif;
+    min-height: 100vh;
+    background-color: bisque;
+    background-image: radial-gradient(whitesmoke, bisque);
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    flex: 1;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    border-radius: 50%; /* Circular profile image */
+}
+
+/* FIGURE */
+figcaption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+}
+
+/* ---------------- Media Queries ---------------- */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0.5rem;
+    }
+
+    .card {
+        padding: 1rem 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+}
+
+/* Phones (480px and below) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.25rem 0;
+    }
+
+    figcaption {
+        font-size: 1rem;
+    }
+
+    .card img {
+        width: 80%;
+        height: auto;
+    }
+
+    main {
+        gap: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
