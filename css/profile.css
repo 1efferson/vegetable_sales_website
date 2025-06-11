@@ -8,7 +8,10 @@
 img { 
     display: block;
     max-width: 100%;
-    height: auto;
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    
 }
 
 /* UTILITY CLASSES */
@@ -19,12 +22,18 @@ img {
 /* GENERAL STYLING */
 body {
     font: 1.5rem "Nunito", sans-serif;
-    min-height: 100vh;
     background-color: bisque;
     background-image: radial-gradient(whitesmoke, bisque);
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* CONTAINER PAGE LAYOUT */
+.container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #333;
+    justify-content: space-between;
 }
 
 /* HEADER */
@@ -58,12 +67,12 @@ nav a:hover {
 }
 
 /* MAIN CONTENT */
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
+.container main {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
 
 .card {
@@ -73,6 +82,8 @@ main {
     padding: 1rem;
     text-align: center;
     transition: transform 0.3s;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .card:hover {
@@ -80,6 +91,7 @@ main {
 }
 
 .card img {
+    border: 5px double rebeccapurple;
     border-radius: 50%; /* Circular profile image */
 }
 
@@ -88,6 +100,11 @@ figcaption {
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 0.5rem;
+}
+
+.card figcaption::after {
+    content: "🎄";
+    display: block;
 }
 
 /* FOOTER */
@@ -118,9 +135,8 @@ footer {
         padding: 1rem 0.5rem;
     }
 
-    main {
+    .container main {
         padding: 1rem;
-        gap: 1.5rem;
     }
 }
 
@@ -149,8 +165,8 @@ footer {
         height: auto;
     }
 
-    main {
-        gap: 1rem;
+    .container main {
+        padding: 1rem;
     }
 
     footer {
