@@ -110,11 +110,11 @@ figcaption {
 /* FOOTER */
 footer {
     background-color: #4CAF50;
+    bottom: 0;
     color: white;
-    text-align: center;
     padding: 1rem;
     position: sticky;
-    bottom: 0;
+    text-align: center;
     z-index: 1000;
 }
 
