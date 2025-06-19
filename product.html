@@ -19,6 +19,7 @@
           </ul>
         </nav>
       </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
     </header>
 
     <section class="sub-header">
@@ -359,5 +360,12 @@
         <p>&copy; 2025 Fresh Harvest | Green Basket. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("sidebar-active");
+        });
+    </script>
   </body>
 </html>

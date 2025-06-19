@@ -61,10 +61,7 @@ nav ul li a:hover {
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 80px 20px;
-    /* -webkit-background-clip: text; */
-    /* background-clip: text; */
-    font-family:Chalkduster,fantasy, Impact;
-    
+    font-family: Chalkduster, fantasy, Impact;
 }
 
 .sub-header h2 {
@@ -92,7 +89,7 @@ section {
     margin-bottom: 30px;
     font-size: 2rem;
     color: #4CAF50;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Product Grid */
@@ -256,7 +253,7 @@ section {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: whitesmoke;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Circle */
@@ -274,7 +271,7 @@ section {
 /* Right Sidebar */
 .right-sidebar {
     width: 200px;
-    background-color:white;
+    background-color: white;
     overflow-y: auto;
     height: 100vh;
     position: fixed;
@@ -283,17 +280,15 @@ section {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .right-sidebar .nav-item {
     padding: 10px;
     margin: 10px 0;
-    /* background-color: #4CAF50; */
     color: black;
     text-align: center;
     text-decoration: none;
-    /* border-radius: 6px; */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -303,9 +298,19 @@ section {
 }
 
 .left-sidebar {
+    width: 200px;
+    background-color: white;
+    overflow-y: auto;
+    height: 100vh;
+    position: fixed;
     left: 0;
-    text-decoration: none;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
+
 /* Footer */
 footer {
     background-color: #333;
@@ -315,43 +320,72 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Hamburger Styles */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+}
 
-/* @media mediatype  and (condition: breakpoint) {
-     //CSS rules
-} */
+/* Toggle visibility */
+@media screen and (max-width: 768px) {
+    .right-sidebar,
+    .left-sidebar {
+        display: none;
+    }
 
+    .hamburger {
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sidebar-active .right-sidebar,
+    .sidebar-active .left-sidebar {
+        display: flex;
+    }
+}
 
 /* SMALL */
-@media screen and ( min-width: 576px) {
+@media screen and (min-width: 576px) {
     body {
         background-color: black;
     }
 }
 
 /* MEDIUM */
-@media screen and ( min-width: 768px) {
+@media screen and (min-width: 768px) {
     body {
         background-color: red;
     }
 }
+
 /* LARGE */
-@media screen and ( min-width: 992px) {
+@media screen and (min-width: 992px) {
     body {
         background-color: green;
     }
 }
 
 /* XL */
-@media screen and ( min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     body {
         background-color: whitesmoke;
     }
 }
 
 /* MOBILE DEVICE LANDSCAPE */
-
-@media screen and ( max-height: 425px) and (min-aspect-ratio: 7/4) {
-
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
     body {
         background-color: gold;
     }
