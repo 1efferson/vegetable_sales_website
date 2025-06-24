@@ -27,14 +27,24 @@ header {
     background-color: #4CAF50;
     color: white;
     padding: 20px 0;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0%;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px 0 20px;
 }
 
 header h1 {
-    text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 nav ul {
@@ -49,7 +59,6 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-    
 }
 
 nav ul li a:hover {
@@ -74,12 +83,11 @@ nav ul li a:hover {
     font-size: 1.2rem;
 }
 
-/* Section Base Styles */
 section {
     padding: 60px 20px;
+    margin-top: 100px;
 }
 
-/* Section Headings */
 .menu-section h2,
 .about-section h2,
 .contact-section h2,
@@ -93,7 +101,6 @@ section {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* Product Grid */
 .image-grid {
     display: flex;
     flex-wrap: wrap;
@@ -148,7 +155,6 @@ section {
     transform: scale(1.05);
 }
 
-/* Nutrient Info */
 .nutrient-info p {
     border: dashed black;
     font-size: 1.2rem;
@@ -173,7 +179,6 @@ section {
     color: red;
 }
 
-/* Nutritious Section */
 .nutritious-section {
     background-color: #eafbea;
     box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
@@ -194,7 +199,6 @@ section {
     margin-bottom: 8px;
 }
 
-/* Storage Section */
 .storage-section {
     background-color: #fffde7;
     box-shadow: 0 4px 12px rgba(255, 193, 7, 0.1);
@@ -215,7 +219,6 @@ section {
     margin-bottom: 8px;
 }
 
-/* Choosing Section */
 .choosing-section {
     background-color: #f0f9ff;
     box-shadow: 0 4px 12px rgba(33, 150, 243, 0.1);
@@ -236,7 +239,6 @@ section {
     margin-bottom: 8px;
 }
 
-/* About & Contact */
 .about-section p,
 .contact-section p {
     max-width: 800px;
@@ -245,7 +247,6 @@ section {
     font-size: 18px;
 }
 
-/* Full Page Utility */
 .fullpage {
     min-height: 100vh;
     display: flex;
@@ -257,7 +258,6 @@ section {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Circle */
 .circle {
     margin: 3rem auto;
     background-color: gold;
@@ -269,7 +269,6 @@ section {
     outline-offset: 0.25rem;
 }
 
-/* Right Sidebar */
 .right-sidebar {
     width: 200px;
     background-color: white;
@@ -312,7 +311,6 @@ section {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -321,7 +319,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Hamburger Styles */
 .hamburger {
     display: none;
     font-size: 2rem;
@@ -329,13 +326,8 @@ footer {
     background-color: #4CAF50;
     padding: 10px 15px;
     cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1100;
 }
 
-/* Toggle visibility */
 @media screen and (max-width: 768px) {
     .right-sidebar,
     .left-sidebar {
@@ -357,35 +349,30 @@ footer {
     }
 }
 
-/* SMALL */
 @media screen and (min-width: 576px) {
     body {
         background-color: black;
     }
 }
 
-/* MEDIUM */
 @media screen and (min-width: 768px) {
     body {
         background-color: red;
     }
 }
 
-/* LARGE */
 @media screen and (min-width: 992px) {
     body {
         background-color: green;
     }
 }
 
-/* XL */
 @media screen and (min-width: 1200px) {
     body {
         background-color: whitesmoke;
     }
 }
 
-/* MOBILE DEVICE LANDSCAPE */
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
     body {
         background-color: gold;
